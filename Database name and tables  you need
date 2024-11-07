@@ -1,0 +1,13 @@
+CREATE DATABASE Hospitalmanagent;
+
+USE Hospitalmanagent;
+
+CREATE TABLE Patient (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(255),
+    phone VARCHAR(15),
+    email VARCHAR(100),
+    gender ENUM('Male', 'Female', 'Other'),
+    dob DATE
+);
